@@ -1,0 +1,8 @@
+create table user(
+user_id varchar(100) primary key,
+user_name varchar(100),
+password varchar(100),
+address varchar(500),
+hobbies varchar(500),
+interest varchar(100)
+)

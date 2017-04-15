@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Edit Form</title>
+</head>
+<body>
+<div align="center">
+	<h1>Add User:</h1>
+
+<form action="SaveServlet" method="post">
+<input type="hidden" name="id" value=""/>
+	<table>
+	<br><br>
+	
+	<tr>
+		<td>
+			<label for="name">User ID:</label>
+		</td>
+		<td>
+			<input type="text" name="userId">
+		
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<label for="Name">Name:</label>
+		</td>
+		<td>
+			<input type="text" name="name">
+		
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="password">Password:</label>
+		</td>
+		<td>
+			<input type="password" name="password">
+		</td>
+	</tr>
+	<tr>
+	<td>
+		<label for="address">Address:</label>
+	</td>
+		<td>
+			<textarea rows="2" cols="10" name="address"></textarea>
+		</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<label for="hobbies">Hobbies:</label>
+	</td>
+		<td>
+			<input type="checkbox" name="hobbies" value="hobby1">hobby1
+			<input type="checkbox" name="hobbies" value="hobby2">hobby2
+			<input type="checkbox" name="hobbies" value="hobby3">hobby3
+		</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<label for="interest">Interest:</label>
+	</td>
+		<td>
+			<input type="radio" name="interest" value="interest1">interest1
+			<input type="radio" name="interest" value="interest2">interest2
+			<input type="radio" name="interest" value="interest3">interest3
+		</td>
+	</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="Save User"/>
+			</td>
+		</tr>
+	</table>
+</form>
+</div>
+</body>
+</html>
