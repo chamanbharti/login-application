@@ -50,7 +50,7 @@ public class SaveServlet extends HttpServlet{
 		         ps.setString(6,userId);  
 		         
 		         int i=ps.executeUpdate();
-		         if(i>0)  {
+		         if(i>0)  {//this is condition
 						RequestDispatcher rd=req.getRequestDispatcher("login.jsp");
 						rd.forward(req, resp);
 					}else{
