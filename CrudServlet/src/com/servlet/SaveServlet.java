@@ -49,7 +49,7 @@ public class SaveServlet extends HttpServlet{
 		         ps.setString(5,interest);
 		         ps.setString(6,userId);  
 		         
-		         int i=ps.executeUpdate();
+		         int i=ps.executeUpdate();//
 		         if(i>0)  {
 						RequestDispatcher rd=req.getRequestDispatcher("login.jsp");
 						rd.forward(req, resp);
