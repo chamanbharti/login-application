@@ -29,7 +29,7 @@ public class SaveServlet extends HttpServlet{
 		}
 		String interest = req.getParameter("interest");
 		
-		//User user=null;
+		//User user=null; first commit
 		Connection con=null;
 		PreparedStatement ps = null;
 		ResultSet rs=null;
